@@ -1,0 +1,192 @@
+.container{
+    height: calc(100vh - 100px);
+    display: flex;
+
+}
+
+.left{
+    flex:1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right{
+    flex:1;
+    padding: 20px;
+}
+
+.imgContainer{
+    width: 80%;
+    height: 80%;
+    position: relative;
+}
+
+.price{
+    color: #F53803;
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #F53803;
+}
+
+
+.sizes{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.size{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.size:nth-child(2){
+    width: 40px;
+    height: 40px;
+}
+
+.size:last-child{
+    width: 50px;
+    height: 50px;
+}
+
+.number{
+    position: absolute;
+    top: -5px;
+    right: -20px;
+    background-color: rgb(171, 76, 13);
+    color:white;
+    font-size: 12px;
+    padding: 0 5px;
+    border-radius: 10px;
+
+}
+
+.ingredients{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+    font-weight: 500;
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+    stroke: #ce5631;
+
+}
+
+.quantity{
+    width: 60px;
+    height: 30px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* .button{
+    height: 40px;
+    margin-left: 20px;
+    background-color: #ff7a00;
+    border-radius: 10px;
+    border-color:#ff7a00;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #b72208;
+} */
+
+/* CSS */
+.button {
+  background: #ce5631;
+  border: 1px solid #ce5631;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  margin-left: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button:hover,
+.button:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+@media screen and (max-width:480px) {
+    .container{
+        height: auto;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .imgContainer{
+        width: 70vw;
+        height: 70vw;
+        margin-top: 20px;
+    }
+
+    .title{
+        margin: 5px;
+    }
+
+    .sizes{
+        width: 100%;
+        padding: 0px 20px;
+
+    }
+
+    .ingredients{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .option{
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .checkbox{
+        width: 25px;
+        height: 25px;
+    }
+
+    .button, .button{
+        height: 50px;
+        padding: 10px 20px ;
+    }
+}

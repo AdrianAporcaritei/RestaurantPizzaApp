@@ -1,0 +1,150 @@
+
+.mainAddButton {
+    background: #ce5631;
+    border: 1px solid #ce5631;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    height:  30px;
+    outline: 0;
+    font-size:medium;
+    text-align: center;
+    margin: 5px 5px;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    padding: 5px 5px;
+  }
+  
+  .mainAddButton:hover,
+  .mainAddButton:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(245, 240, 240, 0.52);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 500px;
+  background-color: white;
+  padding: 10px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.close {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.label{
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.input{
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+
+.priceContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputSm{
+  width: 25%;
+}
+
+.extra{
+  display: flex;
+  justify-content: space-between;
+}
+
+.extraItems{
+  margin: 10px 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.extraItem{
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid tomato;
+  color: tomato;
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.addButton{
+  background: #ce5631;
+  border: 1px solid #ce5631;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  height:  30px;
+  outline: 0;
+  font-size:medium;
+  text-align: center;
+  margin: 5px 5px;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  padding: 5px 5px;
+}
+
+.addButton:hover,
+.addButton:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}

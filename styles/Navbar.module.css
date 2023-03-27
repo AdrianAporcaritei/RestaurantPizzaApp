@@ -1,0 +1,136 @@
+.container{
+  height: 100px;
+  padding: 0px 50px;
+  background-image: radial-gradient(circle at 90% 80%, transparent, #772F1A);
+  animation: background-gradient 5s;
+  animation-iteration-count: infinite;
+  backface-visibility: hidden;
+  animation-timing-function: ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+@keyframes background-gradient {
+    0% {
+      background-color: #8a3b23;
+    }
+    25% {
+      background-color: #F2A65A;
+    }
+    50% {
+      background-color: #8b3b23;
+    }
+    75% {
+      background-color: #ce5631;
+    }
+    100% {
+      background-color: #9d572c;
+    }
+  }
+
+
+.item{
+    flex:1;
+    display: flex;
+    align-items: center;
+}
+
+.item:nth-child(2){
+    flex:3;
+   
+}
+.item:last-child{
+    justify-content: flex-end;
+}
+
+.callButton{
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.texts{
+    margin-left: 20px;
+    color: white;
+}
+
+.text:first-child{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.text:last-child{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.list{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    color: white;
+    
+}
+
+.listItem{
+    margin:20px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.listItem::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.listItem:hover::after{
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cart{
+    position: relative;
+}
+
+.counter{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #F53803;
+}
+
+@media screen and (max-width:480px) {
+    .item:nth-child(2) {
+      display: none;
+    }
+  
+    .item:nth-child(1) {
+        flex: 3;
+    
+    }
+  }
